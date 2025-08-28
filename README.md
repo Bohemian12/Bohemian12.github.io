@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal **portfolio website**, built using **HTML & CSS**.
 The site highlights my skills, projects, and contact details as an aspiring **Data Analyst**.  
-Made using ChatGPT
+Made using ChatGPT.
 👉 **Live Website:** [https://bohemian12.github.io/portfolio](https://bohemian12.github.io)
 
 ---
