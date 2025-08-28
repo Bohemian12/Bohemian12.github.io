@@ -3,98 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om Pathania - Data Analyst Portfolio</title>
+  <title>Om Pathania | Portfolio</title>
   <style>
+    /* Reset & base */
+    * {margin:0;padding:0;box-sizing:border-box;}
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: #f4f7fa;
-      color: #2c3e50;
+      font-family: "Segoe UI", sans-serif;
+      background: #f5f7fa;
+      color: #333;
       line-height: 1.6;
     }
+
     header {
-      background: linear-gradient(135deg, #2980b9, #6dd5fa);
-      color: white;
-      padding: 60px 20px;
+      background: linear-gradient(135deg, #4e73df, #1cc88a);
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
+    header h1 {font-size: 2.5rem; margin-bottom: .5rem;}
+    header p {font-size: 1.2rem;}
+
     nav {
-      background: #2c3e50;
-      padding: 10px;
-      text-align: center;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      padding: .8rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
     nav a {
-      color: white;
-      margin: 0 15px;
+      margin: 0 1rem;
       text-decoration: none;
+      color: #4e73df;
       font-weight: bold;
       transition: color 0.3s;
     }
-    nav a:hover {
-      color: #6dd5fa;
+    nav a:hover {color: #1cc88a;}
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-    .container {
-      max-width: 1100px;
+    section h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #4e73df;
+      font-size: 2rem;
+    }
+
+    .about p {
+      text-align: center;
+      max-width: 700px;
       margin: auto;
-      padding: 40px 20px;
+      font-size: 1.1rem;
     }
-    h2 {
-      margin-bottom: 20px;
-      border-bottom: 3px solid #6dd5fa;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
+
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
-    .card {
-      background: white;
+    .project {
+      background: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
       transition: transform 0.3s;
     }
-    .card:hover {
-      transform: translateY(-8px);
-    }
-    .card img {
+    .project:hover {transform: translateY(-5px);}
+    .project img {
       width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
+      display: block;
     }
-    .card h3 {
-      margin-bottom: 10px;
-      color: #2980b9;
+    .project-content {
+      padding: 1rem;
     }
-    .card p {
-      font-size: 0.95rem;
-      margin-bottom: 10px;
+    .project-content h3 {
+      margin-bottom: .5rem;
+      color: #333;
     }
-    .card a {
+    .project-content p {
+      font-size: .95rem;
+      margin-bottom: .8rem;
+    }
+    .project-content a {
+      color: #1cc88a;
       text-decoration: none;
-      color: #2980b9;
       font-weight: bold;
     }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      gap: .8rem;
+    }
+    .skills li {
+      background: #eaf0fc;
+      color: #4e73df;
+      padding: .5rem 1rem;
+      border-radius: 20px;
+      font-size: .9rem;
+      font-weight: bold;
+    }
+
     footer {
-      background: #2c3e50;
-      color: white;
+      background: #4e73df;
+      color: #fff;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 1rem;
+      margin-top: 2rem;
     }
     footer a {
-      color: #6dd5fa;
-      margin: 0 10px;
+      color: #1cc88a;
       text-decoration: none;
+      margin: 0 .5rem;
     }
   </style>
 </head>
@@ -102,64 +129,78 @@
 
   <header>
     <h1>Om Pathania</h1>
-    <p>Data Analyst | SQL | Power BI | Excel | Tableau</p>
+    <p>Aspiring Data Analyst | SQL • Power BI • Excel • Tableau</p>
   </header>
 
   <nav>
-    <a href="#projects">Projects</a>
     <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
-    <section id="projects">
-      <h2>📊 Projects</h2>
-      <div class="projects">
-        <div class="card">
-          <img src="" alt="Power BI Dashboard Recreation">
-          <h3>Power BI Dashboard Recreation</h3>
-          <p>Recreated a 3-page dashboard using raw data and reference images. Applied data modeling, DAX, and visualization best practices.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="card">
-          <img src="screenshot2.png" alt="HR Attrition Dashboard">
-          <h3>HR Attrition Dashboard</h3>
-          <p>Analyzed employee attrition patterns using Power BI, enabling HR teams to track retention and improve workforce planning.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="card">
-          <img src="screenshot3.png" alt="Coffee Shop Sales Analysis">
-          <h3>Coffee Shop Sales Analysis</h3>
-          <p>Built an Excel dashboard to analyze sales performance, trends, and key KPIs for decision-making.</p>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Om Pathania, a passionate data analyst skilled in SQL, Excel, Power BI, and Tableau. 
+      I love transforming raw data into meaningful insights and building dashboards that drive decisions. 
+      Currently seeking opportunities to contribute my skills and grow in the data domain.
+    </p>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="Dashboard Project">
+        <div class="project-content">
+          <h3>Power BI Dashboard Replica</h3>
+          <p>Recreated a 3-page Power BI dashboard using only raw data and reference images, replicating KPIs, charts, and filters.</p>
           <a href="#">View Project</a>
         </div>
       </div>
-    </section>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="HR Dashboard">
+        <div class="project-content">
+          <h3>HR Attrition Dashboard</h3>
+          <p>Analyzed HR data to identify attrition trends and insights using Power BI.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/400x200" alt="Coffee Shop Sales">
+        <div class="project-content">
+          <h3>Coffee Shop Sales Analysis</h3>
+          <p>Excel dashboard analyzing sales trends, top products, and daily revenue patterns.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="about" style="margin-top:50px;">
-      <h2>👨‍💻 About Me</h2>
-      <p>
-        Hi, I’m <strong>Om Pathania</strong>, an aspiring Data Analyst passionate about transforming raw data into meaningful insights. Skilled in SQL, Excel, Power BI, Tableau, and Python, I focus on creating impactful dashboards and analyses that drive decision-making. Currently building my portfolio to showcase real-world problem solving and analytics skills.
-      </p>
-    </section>
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>SQL</li>
+      <li>Excel</li>
+      <li>Power BI</li>
+      <li>Tableau</li>
+      <li>Python (Basic)</li>
+      <li>Data Cleaning</li>
+    </ul>
+  </section>
 
-    <section id="contact" style="margin-top:50px;">
-      <h2>📩 Contact</h2>
-      <p>Feel free to connect with me:</p>
-      <p>
-        <a href="mailto:ompathania7@gmail.com">Email</a> |
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a>
-      </p>
-    </section>
-  </div>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+      Let’s connect! Reach me at <a href="mailto:ompathania7@gmail.com">ompathania7@gmail.com</a> <br>
+      or connect with me on 
+      <a href="https://www.linkedin.com">LinkedIn</a>.
+    </p>
+  </section>
 
   <footer>
-    <p>© 2025 Om Pathania | Data Analyst Portfolio</p>
-    <p>
-      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a> ·
-      <a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a>
-    </p>
+    <p>&copy; 2025 Om Pathania | Built with ❤️</p>
   </footer>
 
 </body>
