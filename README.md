@@ -1,9 +1,8 @@
 # 🌐 Om Pathania | Portfolio Website
 
 This repository contains the source code for my personal **portfolio website**, built using **HTML & CSS**.
-Made using ChatGPT.
 The site highlights my skills, projects, and contact details as an aspiring **Data Analyst**.  
-
+- Made using ChatGPT
 👉 **Live Website:** [https://bohemian12.github.io/portfolio](https://bohemian12.github.io)
 
 ---
