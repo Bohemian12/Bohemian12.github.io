@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal **portfolio website**, built using **HTML & CSS**.
 The site highlights my skills, projects, and contact details as an aspiring **Data Analyst**.  
-- Made using ChatGPT
+Made using ChatGPT
 👉 **Live Website:** [https://bohemian12.github.io/portfolio](https://bohemian12.github.io)
 
 ---
@@ -19,14 +19,4 @@ The site highlights my skills, projects, and contact details as an aspiring **Da
 - Responsive design for desktop and mobile.  
 - Smooth scrolling navigation.  
 - Clean and minimal UI with modern styling.  
-- Project cards with images and GitHub repo links.  
-
----
-
-## 📂 Project Structure
--├── index.html # Main portfolio page
--├── Dashboard-Screenshots/ # Project images/screenshots
--│ ├── Green-Dashboard.png
--│ ├── Attrition-Dashboard.png
--│ └── Coffee-Shop-Dashboard.png
--└── README.md # Documentation
+- Project cards with images and GitHub repo links.
