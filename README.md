@@ -1,10 +1,10 @@
 # 🌐 Om Pathania | Portfolio Website
 
-This repository contains the source code for my personal **portfolio website**, built using **HTML & CSS**.  
+This repository contains the source code for my personal **portfolio website**, built using **HTML & CSS**.
+Made using ChatGPT.
 The site highlights my skills, projects, and contact details as an aspiring **Data Analyst**.  
 
-👉 **Live Website:** [https://bohemian12.github.io/portfolio](https://bohemian12.github.io/portfolio)  
-*(Update this link if your repo/site name is different)*  
+👉 **Live Website:** [https://bohemian12.github.io/portfolio](https://bohemian12.github.io)
 
 ---
 
@@ -25,10 +25,9 @@ The site highlights my skills, projects, and contact details as an aspiring **Da
 ---
 
 ## 📂 Project Structure
-
-├── index.html # Main portfolio page
-├── Dashboard-Screenshots/ # Project images/screenshots
-│ ├── Green-Dashboard.png
-│ ├── Attrition-Dashboard.png
-│ └── Coffee-Shop-Dashboard.png
-└── README.md # Documentation
+-├── index.html # Main portfolio page
+-├── Dashboard-Screenshots/ # Project images/screenshots
+-│ ├── Green-Dashboard.png
+-│ ├── Attrition-Dashboard.png
+-│ └── Coffee-Shop-Dashboard.png
+-└── README.md # Documentation
